@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="app">
+    <div class="grid">
+      <input @keyup.enter="calc()" type="text" v-model="result" placeholder="0" id="input">
+      <button @click="clear()" class="bot op clean">C</button>
+      <button @click="percent()" class="bot op">%</button>
+      <button @click="negativ()" class="bot op">+/-</button>
+      <button @click="input(op)" class="bot op" v-for="op in operations">{{op}}</button>
+      <button @click="input(op)" class="bot op" v-for="op in operations1">{{op}}</button>
+      <button @click="input(op)" class="bot op" v-for="op in operations2">{{op}}</button>
+      <button @click="input(op)" class="bot op" v-for="op in operations3">{{op}}</button>
+      <button @click="input(op)" class="bot op" v-for="op in operations4">{{op}}</button>
+      <button @click="back()" class="bot op">&larr;</button>
+      <button @click="equal()" class="bot op">=</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

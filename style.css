@@ -1,0 +1,46 @@
+* {
+  font-family: 'Gilroy',sans-serif;
+  transition: 0.3s all;
+  font-weight: 600;
+  }
+  #app {
+  width: 200px;
+  box-shadow: 0 10px 30px #140646;
+  }
+  input{
+    background-color: rgb(49, 48, 49);
+    width: 100%;
+    color: rgb(150, 144, 144);
+    height: 60px;
+    border: none;
+    font-size: 25px;
+    outline: none;
+    text-align: right;
+  }
+  .grid {
+  outline: none;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  
+  }
+  .bot {
+  flex: 22%;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  }
+  .bot:hover{
+  background-color: #140646;
+  }
+  .op {
+  background-color: #232324;
+  color: #fff;
+  font-weight: 400;
+  }
+  .clean{
+    color: rgb(233, 105, 14);
+  }
